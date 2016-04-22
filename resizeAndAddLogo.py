@@ -14,7 +14,7 @@ logoWidth, logoHeight = logoIm.size
 #TODO: Save changes.
 
 os.makedirs('withLogo', exist_ok=True)
-
+os.chdir(os.path.join('./originals')
 for filename in os.listdir('originals'):
     if not (filename.endswith('.png') or filename.endswith('.jpg')) \
     or filename == LOGO_FILENAME:
